@@ -3,7 +3,7 @@ const button = document.getElementById('button');
 const popUpWrapper = document.querySelector('.pop-up-wrapper');
 
 function generatePdf () {
-//   html2pdf(resume, opt);
+  html2pdf(resume, opt);
   popUpWrapper.style.display = "block";
 }
 

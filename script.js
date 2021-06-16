@@ -1,8 +1,10 @@
 const resume = document.getElementById("wrapper");
-const button = document.getElementById('button')
+const button = document.getElementById('button');
+const popUpWrapper = document.querySelector('.pop-up-wrapper');
 
 function generatePdf () {
-  html2pdf(resume, opt);
+//   html2pdf(resume, opt);
+  popUpWrapper.style.display = "block";
 }
 
 const opt = {
@@ -14,3 +16,9 @@ const opt = {
 }
 
 button.addEventListener('click', generatePdf);
+
+window.onclick = function(event) {
+    if (event.target == popUpWrapper) {
+        popUpWrapper.style.display = "none";
+    }
+}

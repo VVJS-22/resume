@@ -221,9 +221,13 @@ h1,h2,h3,h4,h5,h6,p,div {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.7);
     display: none;
     cursor: pointer;
+}
+
+.pop-up-wrapper  > * {
+    z-index: 9999;
 }
 
 .pop-up {
@@ -240,6 +244,8 @@ h1,h2,h3,h4,h5,h6,p,div {
     align-items: center;
     flex-wrap:nowrap;
 }
+
+
 
 .pop-up h4 {
     color: #fff;
